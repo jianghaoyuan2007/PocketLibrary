@@ -1,0 +1,14 @@
+osx_image: xcode9.2
+language: objective-c
+xcode_workspace: PocketLibrary.xcworkspace
+xcode_scheme: PocketLibrary
+before_install:
+  - brew update
+  - brew install xctool
+  - gem install bundler --no-rdoc --no-ri --no-document --quiet
+  - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+
+script: 
+  - xcodebuild -workspace PocketLibrary.xcworkspace -scheme PocketLibrary -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build-for-testing
+  - xctool -workspace PocketLibrary.xcworkspace -reporter pretty -scheme PocketLibraryTests -sdk iphonesimulator run-tests
