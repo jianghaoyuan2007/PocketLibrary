@@ -6,7 +6,8 @@ target 'PocketLibrary' do
   # use_frameworks!
 
   # Pods for PocketLibrary
-
+  pod 'GCDWebServer/WebUploader', '~> 3.4.2'
+  
   target 'PocketLibraryTests' do
     inherit! :search_paths
     # Pods for testing
