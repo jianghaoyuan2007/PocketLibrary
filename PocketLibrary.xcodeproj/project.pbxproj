@@ -14,6 +14,8 @@
 		2C50D5CC2073490F000433C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C50D5CA2073490F000433C9 /* LaunchScreen.storyboard */; };
 		2C50D5CF2073490F000433C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50D5CE2073490F000433C9 /* main.m */; };
 		2C50D5D92073490F000433C9 /* PocketLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50D5D82073490F000433C9 /* PocketLibraryTests.m */; };
+		E206B606B5FD8BD8D8A3DACA /* libPods-PocketLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF309C7C38136659EB17E7B /* libPods-PocketLibrary.a */; };
+		FBBE0F29C8F7C3098349FB7A /* libPods-PocketLibraryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2040B3CF242987771D8291B9 /* Pods-PocketLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibraryTests/Pods-PocketLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C50D5BC2073490F000433C9 /* PocketLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C50D5BF2073490F000433C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C50D5C02073490F000433C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		2C50D5D42073490F000433C9 /* PocketLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C50D5D82073490F000433C9 /* PocketLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketLibraryTests.m; sourceTree = "<group>"; };
 		2C50D5DA2073490F000433C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E1272E51823D36CFF7C06F /* Pods-PocketLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibraryTests/Pods-PocketLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketLibraryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF309C7C38136659EB17E7B /* libPods-PocketLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D557F00C8D21BDD0E8BF97 /* Pods-PocketLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E206B606B5FD8BD8D8A3DACA /* libPods-PocketLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBBE0F29C8F7C3098349FB7A /* libPods-PocketLibraryTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +76,8 @@
 				2C50D5BE2073490F000433C9 /* PocketLibrary */,
 				2C50D5D72073490F000433C9 /* PocketLibraryTests */,
 				2C50D5BD2073490F000433C9 /* Products */,
+				3E94953FD482AD7E35AAC616 /* Pods */,
+				DB776952DC6305DE4E63129D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +115,26 @@
 			path = PocketLibraryTests;
 			sourceTree = "<group>";
 		};
+		3E94953FD482AD7E35AAC616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */,
+				C6D557F00C8D21BDD0E8BF97 /* Pods-PocketLibrary.release.xcconfig */,
+				2040B3CF242987771D8291B9 /* Pods-PocketLibraryTests.debug.xcconfig */,
+				71E1272E51823D36CFF7C06F /* Pods-PocketLibraryTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB776952DC6305DE4E63129D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF309C7C38136659EB17E7B /* libPods-PocketLibrary.a */,
+				A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C50D5DD2073490F000433C9 /* Build configuration list for PBXNativeTarget "PocketLibrary" */;
 			buildPhases = (
+				F36891AE93FC4EAC05A8833C /* [CP] Check Pods Manifest.lock */,
 				2C50D5B82073490F000433C9 /* Sources */,
 				2C50D5B92073490F000433C9 /* Frameworks */,
 				2C50D5BA2073490F000433C9 /* Resources */,
@@ -127,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C50D5E02073490F000433C9 /* Build configuration list for PBXNativeTarget "PocketLibraryTests" */;
 			buildPhases = (
+				31E4F34C84DA4B14A0C953F5 /* [CP] Check Pods Manifest.lock */,
 				2C50D5D02073490F000433C9 /* Sources */,
 				2C50D5D12073490F000433C9 /* Frameworks */,
 				2C50D5D22073490F000433C9 /* Resources */,
@@ -199,6 +233,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31E4F34C84DA4B14A0C953F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketLibraryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F36891AE93FC4EAC05A8833C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C50D5B82073490F000433C9 /* Sources */ = {
@@ -355,34 +428,39 @@
 		};
 		2C50D5DE2073490F000433C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V455LT9HQ8;
 				INFOPLIST_FILE = PocketLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.stephenchiang.PocketLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2C50D5DF2073490F000433C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D557F00C8D21BDD0E8BF97 /* Pods-PocketLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V455LT9HQ8;
 				INFOPLIST_FILE = PocketLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.stephenchiang.PocketLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		2C50D5E12073490F000433C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2040B3CF242987771D8291B9 /* Pods-PocketLibraryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +476,7 @@
 		};
 		2C50D5E22073490F000433C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E1272E51823D36CFF7C06F /* Pods-PocketLibraryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
