@@ -14,6 +14,7 @@
 		2C50D5CC2073490F000433C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C50D5CA2073490F000433C9 /* LaunchScreen.storyboard */; };
 		2C50D5CF2073490F000433C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50D5CE2073490F000433C9 /* main.m */; };
 		2C50D5D92073490F000433C9 /* PocketLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50D5D82073490F000433C9 /* PocketLibraryTests.m */; };
+		2C87A081207DE73100FC35E2 /* TSUploadServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A07F207DE73100FC35E2 /* TSUploadServer.m */; };
 		E206B606B5FD8BD8D8A3DACA /* libPods-PocketLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF309C7C38136659EB17E7B /* libPods-PocketLibrary.a */; };
 		FBBE0F29C8F7C3098349FB7A /* libPods-PocketLibraryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,8 @@
 		2C50D5D42073490F000433C9 /* PocketLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C50D5D82073490F000433C9 /* PocketLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketLibraryTests.m; sourceTree = "<group>"; };
 		2C50D5DA2073490F000433C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C87A07F207DE73100FC35E2 /* TSUploadServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUploadServer.m; sourceTree = "<group>"; };
+		2C87A080207DE73100FC35E2 /* TSUploadServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUploadServer.h; sourceTree = "<group>"; };
 		71E1272E51823D36CFF7C06F /* Pods-PocketLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibraryTests/Pods-PocketLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketLibraryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,7 @@
 		2C50D5BE2073490F000433C9 /* PocketLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				2C87A07E207DE73100FC35E2 /* Upload Server */,
 				2C50D5BF2073490F000433C9 /* AppDelegate.h */,
 				2C50D5C02073490F000433C9 /* AppDelegate.m */,
 				2C50D5C22073490F000433C9 /* ViewController.h */,
@@ -113,6 +117,15 @@
 				2C50D5DA2073490F000433C9 /* Info.plist */,
 			);
 			path = PocketLibraryTests;
+			sourceTree = "<group>";
+		};
+		2C87A07E207DE73100FC35E2 /* Upload Server */ = {
+			isa = PBXGroup;
+			children = (
+				2C87A080207DE73100FC35E2 /* TSUploadServer.h */,
+				2C87A07F207DE73100FC35E2 /* TSUploadServer.m */,
+			);
+			path = "Upload Server";
 			sourceTree = "<group>";
 		};
 		3E94953FD482AD7E35AAC616 /* Pods */ = {
@@ -146,6 +159,7 @@
 				2C50D5B82073490F000433C9 /* Sources */,
 				2C50D5B92073490F000433C9 /* Frameworks */,
 				2C50D5BA2073490F000433C9 /* Resources */,
+				BE1E4E90226DC8CFF03E7684 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +267,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BE1E4E90226DC8CFF03E7684 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary-resources.sh",
+				"${PODS_ROOT}/GCDWebServer/GCDWebUploader/GCDWebUploader.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GCDWebUploader.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F36891AE93FC4EAC05A8833C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +312,7 @@
 			files = (
 				2C50D5C42073490F000433C9 /* ViewController.m in Sources */,
 				2C50D5CF2073490F000433C9 /* main.m in Sources */,
+				2C87A081207DE73100FC35E2 /* TSUploadServer.m in Sources */,
 				2C50D5C12073490F000433C9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
