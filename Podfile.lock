@@ -1,3 +1,18 @@
-PODFILE CHECKSUM: be0ce53d45dbe6dae04c15a52cb5ec1824bbc17b
+PODS:
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
+
+DEPENDENCIES:
+  - GCDWebServer/WebUploader (~> 3.4.2)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GCDWebServer
+
+SPEC CHECKSUMS:
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+
+PODFILE CHECKSUM: e6e29f2216cf485d6161a50887d1d0b9a4fe5d63
 
 COCOAPODS: 1.5.0
