@@ -8,6 +8,7 @@ target 'PocketLibrary' do
 
   # Pods for PocketLibrary
   pod 'GCDWebServer/WebUploader', '~> 3.4.2'
+  pod 'GCDWebServer/WebDAV', '~> 3.4.2'
   pod 'FCFileManager', '~> 1.0.19'
   
   target 'PocketLibraryTests' do

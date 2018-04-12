@@ -7,12 +7,13 @@
 //
 
 #import "TSUploadServer.h"
+#import <GCDWebServer/GCDWebDAVServer.h>
 #import <GCDWebServer/GCDWebUploader.h>
 #import "TSResourceManager.h"
 
 @interface TSUploadServer()
 
-@property (nonatomic, strong) GCDWebUploader *uploader;
+@property (nonatomic, strong) GCDWebDAVServer *uploader;
 
 @end
 
@@ -36,7 +37,7 @@
         
         NSString *directory = [TSResourceManager webRootDirectory];
         
-        self.uploader = [[GCDWebUploader alloc] initWithUploadDirectory:directory];
+        self.uploader = [[GCDWebDAVServer alloc] initWithUploadDirectory:directory];
     }
     
     return self;
