@@ -26,4 +26,6 @@
 
 + (instancetype)webRootResource;
 
+- (void)reload;
+
 @end

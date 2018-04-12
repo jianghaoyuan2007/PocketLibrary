@@ -11,9 +11,13 @@
 #import <GCDWebServer/GCDWebUploader.h>
 #import "TSResourceManager.h"
 
-@interface TSUploadServer()
+NSString * const TSUploadServerResourceDidChangedNotification = @"TSUploadServerResourceDidChangedNotification";
+
+@interface TSUploadServer()<GCDWebDAVServerDelegate>
 
 @property (nonatomic, strong) GCDWebDAVServer *uploader;
+
+- (void)resourceDidUpdate;
 
 @end
 
@@ -38,6 +42,8 @@
         NSString *directory = [TSResourceManager webRootDirectory];
         
         self.uploader = [[GCDWebDAVServer alloc] initWithUploadDirectory:directory];
+        
+        self.uploader.delegate = self;
     }
     
     return self;
@@ -66,6 +72,62 @@
 - (void)shutdown {
     
     [self.uploader stop];
+}
+
+- (void)resourceDidUpdate {
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:TSUploadServerResourceDidChangedNotification
+                                                        object:nil];
+}
+
+#pragma mark - GCDWebDAVServerDelegate Methods
+
+/**
+ *  This method is called whenever a file has been downloaded.
+ */
+- (void)davServer:(GCDWebDAVServer*)server didDownloadFileAtPath:(NSString*)path {
+    
+    [self resourceDidUpdate];
+}
+
+/**
+ *  This method is called whenever a file has been uploaded.
+ */
+- (void)davServer:(GCDWebDAVServer*)server didUploadFileAtPath:(NSString*)path {
+    
+    [self resourceDidUpdate];
+}
+
+/**
+ *  This method is called whenever a file or directory has been moved.
+ */
+- (void)davServer:(GCDWebDAVServer*)server didMoveItemFromPath:(NSString*)fromPath toPath:(NSString*)toPath {
+    
+    [self resourceDidUpdate];
+}
+
+/**
+ *  This method is called whenever a file or directory has been copied.
+ */
+- (void)davServer:(GCDWebDAVServer*)server didCopyItemFromPath:(NSString*)fromPath toPath:(NSString*)toPath {
+ 
+    [self resourceDidUpdate];
+}
+
+/**
+ *  This method is called whenever a file or directory has been deleted.
+ */
+- (void)davServer:(GCDWebDAVServer*)server didDeleteItemAtPath:(NSString*)path {
+    
+    [self resourceDidUpdate];
+}
+
+/**
+ *  This method is called whenever a directory has been created.
+ */
+- (void)davServer:(GCDWebDAVServer*)server didCreateDirectoryAtPath:(NSString*)path {
+    
+    [self resourceDidUpdate];
 }
 
 @end

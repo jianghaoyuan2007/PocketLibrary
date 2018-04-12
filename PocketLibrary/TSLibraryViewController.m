@@ -11,8 +11,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TSResource.h"
 #import "TSResourceManager.h"
+#import "TSUploadServer.h"
 
 @interface TSLibraryViewController ()
+
+- (void)reload;
 
 @end
 
@@ -24,11 +27,27 @@
     self.title = self.resource.name;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(resourceDidChangeNotification)
+                                                 name: TSUploadServerResourceDidChangedNotification
+                                               object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self reload];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Table view data source
@@ -93,5 +112,17 @@
     }
 }
 
+#pragma mark - Private Methods
 
+- (void)reload {
+    
+    [self.resource reload];
+    
+    [self.tableView reloadData];
+}
+
+- (void)resourceDidChangeNotification {
+    
+    [self reload];
+}
 @end
