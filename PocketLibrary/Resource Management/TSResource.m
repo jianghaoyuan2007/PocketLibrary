@@ -11,6 +11,8 @@
 
 @interface TSResource()
 
+- (NSArray *)fetchResouces;
+
 @end
 
 @implementation TSResource
@@ -28,19 +30,8 @@
         _isDirectory = [TSResourceManager isDirectoryOfPath:path];
         
         _path = path;
-        
-        NSArray *paths = [TSResourceManager listInPath:self.path];
-        
-        NSMutableArray *resources = [NSMutableArray arrayWithCapacity:paths.count];
-        
-        for (NSString *path in paths) {
-            
-            TSResource *resource = [[TSResource alloc] initWithPath:path];
-            
-            [resources addObject:resource];
-        }
 
-        _items = [NSArray arrayWithArray:resources];
+        _items = [self fetchResouces];
     }
     
     return self;
@@ -51,6 +42,29 @@
     TSResource *resource = [[TSResource alloc] initWithPath:[TSResourceManager webRootDirectory]];
 
     return resource;
+}
+
+- (void)reload {
+    
+    _items = [self fetchResouces];
+}
+
+#pragma mark - Private Methods
+
+- (NSArray *)fetchResouces {
+    
+    NSArray *paths = [TSResourceManager listInPath:self.path];
+    
+    NSMutableArray *resources = [NSMutableArray arrayWithCapacity:paths.count];
+    
+    for (NSString *path in paths) {
+        
+        TSResource *resource = [[TSResource alloc] initWithPath:path];
+        
+        [resources addObject:resource];
+    }
+
+    return [NSArray arrayWithArray:resources];
 }
 
 @end
