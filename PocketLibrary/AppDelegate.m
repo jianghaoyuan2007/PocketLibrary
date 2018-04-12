@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "TSUploadServer.h"
+#import "TSLibraryViewController.h"
+#import "TSResource.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +22,16 @@
     // Override point for customization after application launch.
 
     [[TSUploadServer sharedInstance] startup];
+    
+    TSLibraryViewController *libraryViewController = [[TSLibraryViewController alloc] init];
+    
+    libraryViewController.resource = [TSResource webRootResource];
+    
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:libraryViewController];
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

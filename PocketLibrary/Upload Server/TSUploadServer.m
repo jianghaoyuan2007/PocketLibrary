@@ -8,6 +8,7 @@
 
 #import "TSUploadServer.h"
 #import <GCDWebServer/GCDWebUploader.h>
+#import "TSResourceManager.h"
 
 @interface TSUploadServer()
 
@@ -31,9 +32,11 @@
     
     if (self = [super init]) {
         
-        NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-
-        self.uploader = [[GCDWebUploader alloc] initWithUploadDirectory:documentsPath];
+        [TSResourceManager createWebRootDirectory];
+        
+        NSString *directory = [TSResourceManager webRootDirectory];
+        
+        self.uploader = [[GCDWebUploader alloc] initWithUploadDirectory:directory];
     }
     
     return self;
