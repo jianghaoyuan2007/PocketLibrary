@@ -1,11 +1,14 @@
 PODS:
   - FCFileManager (1.0.19)
   - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebDAV (3.4.2):
+    - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.4.2):
     - GCDWebServer/Core
 
 DEPENDENCIES:
   - FCFileManager (~> 1.0.19)
+  - GCDWebServer/WebDAV (~> 3.4.2)
   - GCDWebServer/WebUploader (~> 3.4.2)
 
 SPEC REPOS:
@@ -17,6 +20,6 @@ SPEC CHECKSUMS:
   FCFileManager: df8ae7498afedf9ca56dd0cd12335f04dbe96af3
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
 
-PODFILE CHECKSUM: b5856e5c83de78e9049a60af6b336aa00c52ad1a
+PODFILE CHECKSUM: 7c382c7e93cfe48c6f4fe5eb8847edade8292cf0
 
 COCOAPODS: 1.5.0
