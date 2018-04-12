@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const TSUploadServerResourceDidChangedNotification;
+
 @interface TSUploadServer : NSObject
 
 + (instancetype)sharedInstance;
