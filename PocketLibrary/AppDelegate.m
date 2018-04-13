@@ -20,7 +20,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.16 green:0.36 blue:0.62 alpha:1]];
 
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
     [[TSUploadServer sharedInstance] startup];
     
     TSLibraryViewController *libraryViewController = [[TSLibraryViewController alloc] init];

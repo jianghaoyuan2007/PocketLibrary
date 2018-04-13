@@ -499,6 +499,7 @@
 			baseConfigurationReference = 7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V455LT9HQ8;
 				INFOPLIST_FILE = PocketLibrary/Info.plist;
@@ -515,6 +516,7 @@
 			baseConfigurationReference = C6D557F00C8D21BDD0E8BF97 /* Pods-PocketLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V455LT9HQ8;
 				INFOPLIST_FILE = PocketLibrary/Info.plist;
