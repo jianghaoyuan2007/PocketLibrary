@@ -9,6 +9,7 @@
 #import "TSUploadServer.h"
 #import <GCDWebServer/GCDWebDAVServer.h>
 #import <GCDWebServer/GCDWebUploader.h>
+#import <AVFoundation/AVFoundation.h>
 #import "TSResourceManager.h"
 
 NSString * const TSUploadServerResourceDidChangedNotification = @"TSUploadServerResourceDidChangedNotification";
@@ -44,6 +45,8 @@ NSString * const TSUploadServerResourceDidChangedNotification = @"TSUploadServer
         self.uploader = [[GCDWebDAVServer alloc] initWithUploadDirectory:directory];
         
         self.uploader.delegate = self;
+        
+        self.uploader.allowedFileExtensions = @[@"mp3", @"mp4"];
     }
     
     return self;
