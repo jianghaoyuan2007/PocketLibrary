@@ -13,7 +13,7 @@
 
 + (NSString *)webRootDirectory {
     
-    NSString *directory = @"Libraries";
+    NSString *directory = @"Library";
     
     return [FCFileManager pathForDocumentsDirectoryWithPath:directory];
 }
@@ -28,7 +28,9 @@
 
 + (NSArray<NSString *> *)listInPath:(NSString *)path {
     
-    return [FCFileManager listItemsInDirectoryAtPath:path deep:NO];
+    NSArray *files = [FCFileManager listItemsInDirectoryAtPath:path deep:NO];
+    
+    return [files sortedArrayUsingSelector:@selector(compare:)];
 }
 
 + (NSString *)locateResourceInPath:(NSString *)path name:(NSString *)name {
