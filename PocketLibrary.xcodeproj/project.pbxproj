@@ -16,8 +16,9 @@
 		2C87A081207DE73100FC35E2 /* TSUploadServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A07F207DE73100FC35E2 /* TSUploadServer.m */; };
 		2C87A085207DEB1200FC35E2 /* TSResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A084207DEB1200FC35E2 /* TSResourceManager.m */; };
 		2C87A088207DF45000FC35E2 /* TSResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A087207DF45000FC35E2 /* TSResource.m */; };
-		2C87A08B207DFAD000FC35E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A089207DFACF00FC35E2 /* ViewController.m */; };
 		2C87A08E207DFAF700FC35E2 /* TSLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A08D207DFAF700FC35E2 /* TSLibraryViewController.m */; };
+		2CDBF17620872EE000D0C919 /* TSImportResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBF17420872EE000D0C919 /* TSImportResourceViewController.m */; };
+		2CDBF17720872EE000D0C919 /* TSImportResourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDBF17520872EE000D0C919 /* TSImportResourceViewController.xib */; };
 		E206B606B5FD8BD8D8A3DACA /* libPods-PocketLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF309C7C38136659EB17E7B /* libPods-PocketLibrary.a */; };
 		FBBE0F29C8F7C3098349FB7A /* libPods-PocketLibraryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */; };
 /* End PBXBuildFile section */
@@ -51,10 +52,11 @@
 		2C87A084207DEB1200FC35E2 /* TSResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSResourceManager.m; sourceTree = "<group>"; };
 		2C87A086207DF45000FC35E2 /* TSResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSResource.h; sourceTree = "<group>"; };
 		2C87A087207DF45000FC35E2 /* TSResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSResource.m; sourceTree = "<group>"; };
-		2C87A089207DFACF00FC35E2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2C87A08A207DFAD000FC35E2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2C87A08C207DFAF700FC35E2 /* TSLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSLibraryViewController.h; sourceTree = "<group>"; };
 		2C87A08D207DFAF700FC35E2 /* TSLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSLibraryViewController.m; sourceTree = "<group>"; };
+		2CDBF17320872EE000D0C919 /* TSImportResourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSImportResourceViewController.h; sourceTree = "<group>"; };
+		2CDBF17420872EE000D0C919 /* TSImportResourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImportResourceViewController.m; sourceTree = "<group>"; };
+		2CDBF17520872EE000D0C919 /* TSImportResourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSImportResourceViewController.xib; sourceTree = "<group>"; };
 		71E1272E51823D36CFF7C06F /* Pods-PocketLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibraryTests/Pods-PocketLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketLibraryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,10 +111,11 @@
 				2C87A07E207DE73100FC35E2 /* Upload Server */,
 				2C50D5BF2073490F000433C9 /* AppDelegate.h */,
 				2C50D5C02073490F000433C9 /* AppDelegate.m */,
-				2C87A08A207DFAD000FC35E2 /* ViewController.h */,
-				2C87A089207DFACF00FC35E2 /* ViewController.m */,
 				2C87A08C207DFAF700FC35E2 /* TSLibraryViewController.h */,
 				2C87A08D207DFAF700FC35E2 /* TSLibraryViewController.m */,
+				2CDBF17320872EE000D0C919 /* TSImportResourceViewController.h */,
+				2CDBF17420872EE000D0C919 /* TSImportResourceViewController.m */,
+				2CDBF17520872EE000D0C919 /* TSImportResourceViewController.xib */,
 				2C50D5C52073490F000433C9 /* Main.storyboard */,
 				2C50D5C82073490F000433C9 /* Assets.xcassets */,
 				2C50D5CA2073490F000433C9 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDBF17720872EE000D0C919 /* TSImportResourceViewController.xib in Resources */,
 				2C50D5CC2073490F000433C9 /* LaunchScreen.storyboard in Resources */,
 				2C50D5C92073490F000433C9 /* Assets.xcassets in Resources */,
 				2C50D5C72073490F000433C9 /* Main.storyboard in Resources */,
@@ -338,13 +342,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C87A08B207DFAD000FC35E2 /* ViewController.m in Sources */,
 				2C87A088207DF45000FC35E2 /* TSResource.m in Sources */,
 				2C87A085207DEB1200FC35E2 /* TSResourceManager.m in Sources */,
 				2C87A08E207DFAF700FC35E2 /* TSLibraryViewController.m in Sources */,
 				2C50D5CF2073490F000433C9 /* main.m in Sources */,
 				2C87A081207DE73100FC35E2 /* TSUploadServer.m in Sources */,
 				2C50D5C12073490F000433C9 /* AppDelegate.m in Sources */,
+				2CDBF17620872EE000D0C919 /* TSImportResourceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

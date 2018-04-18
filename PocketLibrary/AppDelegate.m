@@ -29,8 +29,6 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
-    [[TSUploadServer sharedInstance] startup];
-    
     TSLibraryViewController *libraryViewController = [[TSLibraryViewController alloc] init];
     
     libraryViewController.resource = [TSResource webRootResource];

@@ -12,6 +12,7 @@
 #import "TSResource.h"
 #import "TSResourceManager.h"
 #import "TSUploadServer.h"
+#import "TSImportResourceViewController.h"
 
 @interface TSLibraryViewController ()
 
@@ -25,6 +26,16 @@
     [super viewDidLoad];
     
     self.title = self.resource.name;
+    
+    if ([self.navigationController.viewControllers count] == 1) {
+        
+        UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Import"
+                                                                 style:UIBarButtonItemStylePlain
+                                                                target:self
+                                                                action:@selector(rightBarButtonItemTapped)];
+        
+        self.navigationItem.rightBarButtonItem = item;
+    }
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
@@ -128,4 +139,14 @@
     
     [self reload];
 }
+
+- (void)rightBarButtonItemTapped {
+
+    TSImportResourceViewController *viewController = [TSImportResourceViewController new];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
+}
+
 @end
