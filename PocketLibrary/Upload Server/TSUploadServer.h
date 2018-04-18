@@ -20,4 +20,6 @@ extern NSString * const TSUploadServerResourceDidChangedNotification;
 
 - (void)shutdown;
 
+- (NSString *)serverAddress;
+
 @end

@@ -77,6 +77,11 @@ NSString * const TSUploadServerResourceDidChangedNotification = @"TSUploadServer
     [self.uploader stop];
 }
 
+- (NSString *)serverAddress {
+    
+    return self.uploader.serverURL.absoluteString;
+}
+
 - (void)resourceDidUpdate {
     
     [[NSNotificationCenter defaultCenter] postNotificationName:TSUploadServerResourceDidChangedNotification
