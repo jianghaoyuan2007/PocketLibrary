@@ -1,0 +1,8 @@
+app_identifier("net.stephenchiang.PocketLibrary") # The bundle identifier of your app
+apple_id("jianghaoyuan2007@gmail.com") # Your Apple email address
+
+itc_team_id("118803175") # iTunes Connect Team ID
+team_id("V455LT9HQ8") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
