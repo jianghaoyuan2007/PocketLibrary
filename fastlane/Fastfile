@@ -1,0 +1,33 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+def next_version
+  Time.now.strftime("%Y%m%d%H%M")
+end
+
+def custom_increment_build_number
+  new_build_number = next_version
+  set_info_plist_value(path: "PocketLibrary/Info.plist", key: "CFBundleVersion", value: new_build_number)
+end
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    custom_increment_build_number
+    cert
+    sigh
+    disable_automatic_code_signing(path: "PocketLibrary.xcodeproj")
+    build_app(workspace: "PocketLibrary.xcworkspace", scheme: "PocketLibrary")
+    enable_automatic_code_signing(path: "PocketLibrary.xcodeproj")
+    upload_to_testflight
+  end
+end
