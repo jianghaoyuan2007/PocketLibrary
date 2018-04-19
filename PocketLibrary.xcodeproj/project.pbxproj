@@ -19,12 +19,21 @@
 		2C87A08E207DFAF700FC35E2 /* TSLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C87A08D207DFAF700FC35E2 /* TSLibraryViewController.m */; };
 		2CDBF17620872EE000D0C919 /* TSImportResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBF17420872EE000D0C919 /* TSImportResourceViewController.m */; };
 		2CDBF17720872EE000D0C919 /* TSImportResourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDBF17520872EE000D0C919 /* TSImportResourceViewController.xib */; };
+		2CDBF17F208850CD00D0C919 /* PocketLibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBF17E208850CD00D0C919 /* PocketLibraryUITests.m */; };
+		2CDBF1882088512400D0C919 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBF1872088512300D0C919 /* SnapshotHelper.swift */; };
 		E206B606B5FD8BD8D8A3DACA /* libPods-PocketLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF309C7C38136659EB17E7B /* libPods-PocketLibrary.a */; };
 		FBBE0F29C8F7C3098349FB7A /* libPods-PocketLibraryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2C50D5D52073490F000433C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C50D5B42073490F000433C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C50D5BB2073490F000433C9;
+			remoteInfo = PocketLibrary;
+		};
+		2CDBF181208850CD00D0C919 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C50D5B42073490F000433C9 /* Project object */;
 			proxyType = 1;
@@ -57,6 +66,11 @@
 		2CDBF17320872EE000D0C919 /* TSImportResourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSImportResourceViewController.h; sourceTree = "<group>"; };
 		2CDBF17420872EE000D0C919 /* TSImportResourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSImportResourceViewController.m; sourceTree = "<group>"; };
 		2CDBF17520872EE000D0C919 /* TSImportResourceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TSImportResourceViewController.xib; sourceTree = "<group>"; };
+		2CDBF17C208850CD00D0C919 /* PocketLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CDBF17E208850CD00D0C919 /* PocketLibraryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PocketLibraryUITests.m; sourceTree = "<group>"; };
+		2CDBF180208850CD00D0C919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CDBF1862088512200D0C919 /* PocketLibraryUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketLibraryUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		2CDBF1872088512300D0C919 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		71E1272E51823D36CFF7C06F /* Pods-PocketLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibraryTests/Pods-PocketLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		7E181A1B6145DBC8D39294DC /* Pods-PocketLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketLibrary/Pods-PocketLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D559710D3CD6973879FD21 /* libPods-PocketLibraryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketLibraryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CDBF179208850CD00D0C919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +110,7 @@
 			children = (
 				2C50D5BE2073490F000433C9 /* PocketLibrary */,
 				2C50D5D72073490F000433C9 /* PocketLibraryTests */,
+				2CDBF17D208850CD00D0C919 /* PocketLibraryUITests */,
 				2C50D5BD2073490F000433C9 /* Products */,
 				3E94953FD482AD7E35AAC616 /* Pods */,
 				DB776952DC6305DE4E63129D /* Frameworks */,
@@ -100,6 +122,7 @@
 			children = (
 				2C50D5BC2073490F000433C9 /* PocketLibrary.app */,
 				2C50D5D42073490F000433C9 /* PocketLibraryTests.xctest */,
+				2CDBF17C208850CD00D0C919 /* PocketLibraryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +175,17 @@
 				2C87A084207DEB1200FC35E2 /* TSResourceManager.m */,
 			);
 			path = "Resource Management";
+			sourceTree = "<group>";
+		};
+		2CDBF17D208850CD00D0C919 /* PocketLibraryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2CDBF1872088512300D0C919 /* SnapshotHelper.swift */,
+				2CDBF17E208850CD00D0C919 /* PocketLibraryUITests.m */,
+				2CDBF180208850CD00D0C919 /* Info.plist */,
+				2CDBF1862088512200D0C919 /* PocketLibraryUITests-Bridging-Header.h */,
+			);
+			path = PocketLibraryUITests;
 			sourceTree = "<group>";
 		};
 		3E94953FD482AD7E35AAC616 /* Pods */ = {
@@ -215,6 +249,24 @@
 			productReference = 2C50D5D42073490F000433C9 /* PocketLibraryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2CDBF17B208850CD00D0C919 /* PocketLibraryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CDBF185208850CD00D0C919 /* Build configuration list for PBXNativeTarget "PocketLibraryUITests" */;
+			buildPhases = (
+				2CDBF178208850CD00D0C919 /* Sources */,
+				2CDBF179208850CD00D0C919 /* Frameworks */,
+				2CDBF17A208850CD00D0C919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CDBF182208850CD00D0C919 /* PBXTargetDependency */,
+			);
+			name = PocketLibraryUITests;
+			productName = PocketLibraryUITests;
+			productReference = 2CDBF17C208850CD00D0C919 /* PocketLibraryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,6 +292,12 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2C50D5BB2073490F000433C9;
 					};
+					2CDBF17B208850CD00D0C919 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C50D5BB2073490F000433C9;
+					};
 				};
 			};
 			buildConfigurationList = 2C50D5B72073490F000433C9 /* Build configuration list for PBXProject "PocketLibrary" */;
@@ -257,6 +315,7 @@
 			targets = (
 				2C50D5BB2073490F000433C9 /* PocketLibrary */,
 				2C50D5D32073490F000433C9 /* PocketLibraryTests */,
+				2CDBF17B208850CD00D0C919 /* PocketLibraryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +333,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2C50D5D22073490F000433C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CDBF17A208850CD00D0C919 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,6 +428,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CDBF178208850CD00D0C919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CDBF17F208850CD00D0C919 /* PocketLibraryUITests.m in Sources */,
+				2CDBF1882088512400D0C919 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -369,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = 2C50D5BB2073490F000433C9 /* PocketLibrary */;
 			targetProxy = 2C50D5D52073490F000433C9 /* PBXContainerItemProxy */;
+		};
+		2CDBF182208850CD00D0C919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C50D5BB2073490F000433C9 /* PocketLibrary */;
+			targetProxy = 2CDBF181208850CD00D0C919 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,6 +649,51 @@
 			};
 			name = Release;
 		};
+		2CDBF183208850CD00D0C919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PocketLibraryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.stephenchiang.PocketLibraryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PocketLibraryUITests/PocketLibraryUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketLibrary;
+			};
+			name = Debug;
+		};
+		2CDBF184208850CD00D0C919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PocketLibraryUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.stephenchiang.PocketLibraryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PocketLibraryUITests/PocketLibraryUITests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketLibrary;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -595,6 +720,15 @@
 			buildConfigurations = (
 				2C50D5E12073490F000433C9 /* Debug */,
 				2C50D5E22073490F000433C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CDBF185208850CD00D0C919 /* Build configuration list for PBXNativeTarget "PocketLibraryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CDBF183208850CD00D0C919 /* Debug */,
+				2CDBF184208850CD00D0C919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
