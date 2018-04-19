@@ -226,6 +226,7 @@
 				TargetAttributes = {
 					2C50D5BB2073490F000433C9 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = V455LT9HQ8;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -235,6 +236,7 @@
 					};
 					2C50D5D32073490F000433C9 = {
 						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = V455LT9HQ8;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2C50D5BB2073490F000433C9;
 					};
@@ -521,6 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V455LT9HQ8;
 				INFOPLIST_FILE = PocketLibrary/Info.plist;
@@ -528,6 +531,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.stephenchiang.PocketLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "673a59dd-90b7-49b7-a037-c53ba4656805";
+				PROVISIONING_PROFILE_SPECIFIER = "net.stephenchiang.PocketLibrary AppStore";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
