@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C50D5BB2073490F000433C9"
-               BuildableName = "PocketLibrary.app"
-               BlueprintName = "PocketLibrary"
+               BlueprintIdentifier = "2CDBF17B208850CD00D0C919"
+               BuildableName = "PocketLibraryUITests.xctest"
+               BlueprintName = "PocketLibraryUITests"
                ReferencedContainer = "container:PocketLibrary.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,16 +32,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C50D5D32073490F000433C9"
-               BuildableName = "PocketLibraryTests.xctest"
-               BlueprintName = "PocketLibraryTests"
-               ReferencedContainer = "container:PocketLibrary.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "2CDBF17B208850CD00D0C919"
                BuildableName = "PocketLibraryUITests.xctest"
                BlueprintName = "PocketLibraryUITests"
@@ -49,15 +39,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C50D5BB2073490F000433C9"
-            BuildableName = "PocketLibrary.app"
-            BlueprintName = "PocketLibrary"
-            ReferencedContainer = "container:PocketLibrary.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -71,16 +52,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C50D5BB2073490F000433C9"
-            BuildableName = "PocketLibrary.app"
-            BlueprintName = "PocketLibrary"
+            BlueprintIdentifier = "2CDBF17B208850CD00D0C919"
+            BuildableName = "PocketLibraryUITests.xctest"
+            BlueprintName = "PocketLibraryUITests"
             ReferencedContainer = "container:PocketLibrary.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +70,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C50D5BB2073490F000433C9"
-            BuildableName = "PocketLibrary.app"
-            BlueprintName = "PocketLibrary"
+            BlueprintIdentifier = "2CDBF17B208850CD00D0C919"
+            BuildableName = "PocketLibraryUITests.xctest"
+            BlueprintName = "PocketLibraryUITests"
             ReferencedContainer = "container:PocketLibrary.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
